@@ -1,4 +1,4 @@
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tune_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tune/tune_{{ version }}.tar.gz
-  sha256: 67e80653fa0f46d177758abda590261b2788c5673f1a969f1d1b2129a7cc4749
+  sha256: 2309d763cdc4b37acbb13b73a642ca5d39ed03e688132e14085f3c93de972517
 
 build:
   merge_build_host: true  # [win]
@@ -27,42 +27,42 @@ requirements:
     - r-base
     - r-gpfit
     - r-cli >=2.0.0
-    - r-crayon
-    - r-dials >=0.0.4
-    - r-dplyr >=0.8.3
+    - r-dials >=0.0.9
+    - r-dplyr >=1.0.0
     - r-foreach
+    - r-generics >=0.1.0
     - r-ggplot2
     - r-glue
-    - r-hardhat >=0.1.0
-    - r-parsnip >=0.0.4
+    - r-parsnip >=0.1.4
     - r-purrr >=0.3.2
-    - r-recipes >=0.1.9
+    - r-recipes >=0.1.15
     - r-rlang >=0.4.0
-    - r-rsample
-    - r-tibble >=2.1.3
+    - r-rsample >=0.0.9
+    - r-tibble >=3.1.0
     - r-tidyr
-    - r-workflows >=0.1.0
-    - r-yardstick
+    - r-vctrs >=0.3.0
+    - r-workflows >=0.2.1
+    - r-yardstick >=0.0.7
   run:
     - r-base
     - r-gpfit
     - r-cli >=2.0.0
-    - r-crayon
-    - r-dials >=0.0.4
-    - r-dplyr >=0.8.3
+    - r-dials >=0.0.9
+    - r-dplyr >=1.0.0
     - r-foreach
+    - r-generics >=0.1.0
     - r-ggplot2
     - r-glue
-    - r-hardhat >=0.1.0
-    - r-parsnip >=0.0.4
+    - r-parsnip >=0.1.4
     - r-purrr >=0.3.2
-    - r-recipes >=0.1.9
+    - r-recipes >=0.1.15
     - r-rlang >=0.4.0
-    - r-rsample
-    - r-tibble >=2.1.3
+    - r-rsample >=0.0.9
+    - r-tibble >=3.1.0
     - r-tidyr
-    - r-workflows >=0.1.0
-    - r-yardstick
+    - r-vctrs >=0.3.0
+    - r-workflows >=0.2.1
+    - r-yardstick >=0.0.7
 
 test:
   commands:
