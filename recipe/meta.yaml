@@ -23,45 +23,52 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-gpfit
     - r-cli >=2.0.0
-    - r-dials >=0.0.9
+    - r-dials >=0.0.10
     - r-dplyr >=1.0.0
     - r-foreach
-    - r-generics >=0.1.0
+    - r-generics >=0.1.2
     - r-ggplot2
     - r-glue
-    - r-parsnip >=0.1.4
+    - r-hardhat >=0.2.0
+    - r-lifecycle >=1.0.0
+    - r-parsnip >=0.2.0
     - r-purrr >=0.3.2
-    - r-recipes >=0.1.15
+    - r-recipes >=0.2.0
     - r-rlang >=0.4.0
     - r-rsample >=0.0.9
     - r-tibble >=3.1.0
     - r-tidyr
     - r-vctrs >=0.3.0
-    - r-workflows >=0.2.1
+    - r-withr
+    - r-workflows >=0.2.5
     - r-yardstick >=0.0.7
   run:
     - r-base
     - r-gpfit
     - r-cli >=2.0.0
-    - r-dials >=0.0.9
+    - r-dials >=0.0.10
     - r-dplyr >=1.0.0
     - r-foreach
-    - r-generics >=0.1.0
+    - r-generics >=0.1.2
     - r-ggplot2
     - r-glue
-    - r-parsnip >=0.1.4
+    - r-hardhat >=0.2.0
+    - r-lifecycle >=1.0.0
+    - r-parsnip >=0.2.0
     - r-purrr >=0.3.2
-    - r-recipes >=0.1.15
+    - r-recipes >=0.2.0
     - r-rlang >=0.4.0
     - r-rsample >=0.0.9
     - r-tibble >=3.1.0
     - r-tidyr
     - r-vctrs >=0.3.0
-    - r-workflows >=0.2.1
+    - r-withr
+    - r-workflows >=0.2.5
     - r-yardstick >=0.0.7
 
 test:
