@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tune_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tune/tune_{{ version }}.tar.gz
-  sha256: 17a09d138008d2dbfc349280d3e7ad81f7090b18e1ba00a27741f1477c4b024a
+  sha256: 752e8f58f5fdd27b71a764d58f5787ef4f15d3e0f1329ff84972a33b1efa8b10
 
 build:
   merge_build_host: true  # [win]
