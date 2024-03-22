@@ -3,11 +3,13 @@ About r-tune-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tune-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/tidymodels/tune
+Home: https://tune.tidymodels.org/
 
 Package license: MIT
 
 Summary: The ability to tune models is important. 'tune' contains functions and classes to be used in conjunction with other 'tidymodels' packages for finding reasonable values of hyper-parameters in models, pre-processing methods, and post-processing steps.
+
+Development: https://github.com/tidymodels/tune
 
 Current build status
 ====================
