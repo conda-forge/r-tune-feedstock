@@ -92,10 +92,10 @@ test:
   source_files:
     - tests/
   commands:
-    - $R -e "library('tune')"                                                         # [not win]
-    - $R -e "testthat::test_file('tests/testthat.R', stop_on_failure=TRUE)"           # [not win]
-    - "\"%R%\" -e \"library('tune')\""                                                # [win]
-    - "\"%R%\" -e \"testthat::test_file('tests/testthat.R', stop_on_failure=TRUE)\""  # [win]
+    - $R -e "library('tune')"                                                                           # [not win]
+    - $R -e "testthat::test_dir('tests/testthat/', package='tune', load_package='installed')"           # [not win]
+    - "\"%R%\" -e \"library('tune')\""                                                                  # [win]
+    - "\"%R%\" -e \"testthat::test_dir('tests/testthat/', package='tune', load_package='installed')\""  # [win]
 
 about:
   home: https://tune.tidymodels.org/
