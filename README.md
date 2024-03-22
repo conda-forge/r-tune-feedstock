@@ -3,11 +3,13 @@ About r-tune-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tune-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/tidymodels/tune
+Home: https://tune.tidymodels.org/
 
 Package license: MIT
 
 Summary: The ability to tune models is important. 'tune' contains functions and classes to be used in conjunction with other 'tidymodels' packages for finding reasonable values of hyper-parameters in models, pre-processing methods, and post-processing steps.
+
+Development: https://github.com/tidymodels/tune
 
 Current build status
 ====================
@@ -95,7 +97,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
