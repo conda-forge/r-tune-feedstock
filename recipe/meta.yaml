@@ -1,6 +1,5 @@
 {% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-tune
@@ -13,8 +12,7 @@ source:
   sha256: 719aa9e1389b4a029b6c5c0080acd90b2a950d78ef4ed891ff1704dc14b364e1
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
