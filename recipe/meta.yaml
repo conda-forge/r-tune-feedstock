@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tune_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tune/tune_{{ version }}.tar.gz
-  sha256: 719aa9e1389b4a029b6c5c0080acd90b2a950d78ef4ed891ff1704dc14b364e1
+  sha256: 1113ec5afe6aad9c4032300edadce74d2c6dd26da9165ce9209a32b5440c1887
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -24,8 +24,9 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-gpfit
     - r-cli >=3.3.0
-    - r-dials >=1.0.0
+    - r-dials >=1.4.0
     - r-dofuture >=1.0.0
     - r-dplyr >=1.1.0
     - r-foreach
@@ -33,25 +34,25 @@ requirements:
     - r-generics >=0.1.2
     - r-ggplot2
     - r-glue >=1.6.2
-    - r-gpfit
-    - r-hardhat >=1.2.0
+    - r-hardhat >=1.4.1
     - r-lifecycle >=1.0.0
     - r-parsnip >=1.2.0
     - r-purrr >=1.0.0
     - r-recipes >=1.0.4
     - r-rlang >=1.1.0
-    - r-rsample >=1.2.0
+    - r-rsample >=1.2.1
     - r-tibble >=3.1.0
     - r-tidyr >=1.2.0
     - r-tidyselect >=1.1.2
     - r-vctrs >=0.6.1
     - r-withr
-    - r-workflows >=1.1.4
+    - r-workflows >=1.2.0
     - r-yardstick >=1.3.0
   run:
     - r-base
+    - r-gpfit
     - r-cli >=3.3.0
-    - r-dials >=1.0.0
+    - r-dials >=1.4.0
     - r-dofuture >=1.0.0
     - r-dplyr >=1.1.0
     - r-foreach
@@ -59,20 +60,19 @@ requirements:
     - r-generics >=0.1.2
     - r-ggplot2
     - r-glue >=1.6.2
-    - r-gpfit
-    - r-hardhat >=1.2.0
+    - r-hardhat >=1.4.1
     - r-lifecycle >=1.0.0
     - r-parsnip >=1.2.0
     - r-purrr >=1.0.0
     - r-recipes >=1.0.4
     - r-rlang >=1.1.0
-    - r-rsample >=1.2.0
+    - r-rsample >=1.2.1
     - r-tibble >=3.1.0
     - r-tidyr >=1.2.0
     - r-tidyselect >=1.1.2
     - r-vctrs >=0.6.1
     - r-withr
-    - r-workflows >=1.1.4
+    - r-workflows >=1.2.0
     - r-yardstick >=1.3.0
 
 test:
