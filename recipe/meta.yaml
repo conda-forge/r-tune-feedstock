@@ -12,7 +12,7 @@ source:
   sha256: 1113ec5afe6aad9c4032300edadce74d2c6dd26da9165ce9209a32b5440c1887
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -86,8 +86,7 @@ test:
     - r-modeldata
     - r-randomforest
     - r-scales
-    # NB: temporary skip until r-xgboost migrates
-    # - r-xgboost
+    - r-xgboost
   source_files:
     - tests/
   commands:
