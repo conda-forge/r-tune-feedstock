@@ -77,9 +77,12 @@ test:
     - r-glmnet
     - r-kernlab
     - r-kknn
+    - r-mirai
     - r-modeldata
+    - r-probably
     - r-randomforest
     - r-scales
+    - r-splines2
     - r-xgboost
   source_files:
     - tests/
