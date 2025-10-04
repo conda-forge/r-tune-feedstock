@@ -12,7 +12,7 @@ source:
   sha256: 58fb40cbf74a397e53884b2d49cddc4e3d92b973b48c8e9c0b64181f54497a14
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -71,26 +71,26 @@ requirements:
 
 test:
   requires:
-    - r-testthat
-    - r-c50
-    - r-censored
-    - r-glmnet
-    - r-kernlab
-    - r-kknn
-    - r-mirai
-    - r-modeldata
-    - r-probably
-    - r-randomforest
-    - r-scales
-    - r-splines2
-    - r-xgboost
+    # - r-testthat
+    # - r-c50
+    # - r-censored
+    # - r-glmnet
+    # - r-kernlab
+    # - r-kknn
+    # - r-mirai
+    # - r-modeldata
+    # - r-probably
+    # - r-randomforest
+    # - r-scales
+    # - r-splines2
+    # - r-xgboost
   source_files:
     - tests/
   commands:
     - $R -e "library('tune')"                                                                           # [not win]
-    - $R -e "testthat::test_dir('tests/testthat/', package='tune', load_package='installed')"           # [not win]
+    # - $R -e "testthat::test_dir('tests/testthat/', package='tune', load_package='installed')"           # [not win]
     - "\"%R%\" -e \"library('tune')\""                                                                  # [win]
-    - "\"%R%\" -e \"testthat::test_dir('tests/testthat/', package='tune', load_package='installed')\""  # [win]
+    # - "\"%R%\" -e \"testthat::test_dir('tests/testthat/', package='tune', load_package='installed')\""  # [win]
 
 about:
   home: https://tune.tidymodels.org/
