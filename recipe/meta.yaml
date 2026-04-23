@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tune_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tune/tune_{{ version }}.tar.gz
-  sha256: 67974d9e13901fac7f8294f71aee781dd51af4dca54c73be41b0c3307823aa77
+  sha256: 9abeb0c31e879118f2d2ada2bfee2338dc7c4acdda25c4795b50acb0354352ce
 
 build:
   number: 0
